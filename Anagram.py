@@ -16,7 +16,6 @@ def anagram_generator(sequence) -> list:
 
         else:
             asci_dict[dict_key] = [word]
-
             
     return list(asci_dict.values())
 
