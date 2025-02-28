@@ -60,8 +60,8 @@ class GCD:
 
 if __name__ == '__main__':
     print("\033[35mInput Format : twoone, fivethree\033[0m")
-    var1 = input("Enter First Number in word : ")
-    var2 = input("Enter Second Number in word : ")
+    var1 = input("Enter First Number in word : ").lower()
+    var2 = input("Enter Second Number in word : ").lower()
 
     # pdb.set_trace()
 
