@@ -1,4 +1,4 @@
-li = ["eat","tea","tan","ate","nat","bat"]
+# li = ["eat","tea","tan","ate","nat","bat"]
 
 
 def anagram_generator(sequence) -> list:
@@ -20,7 +20,11 @@ def anagram_generator(sequence) -> list:
             
     return list(asci_dict.values())
 
-        
-            
 
-print(anagram_generator(li))
+if __name__ == '__main__':
+        
+    words = input("Enter words seperated by space : ")
+
+    li = words.split(' ')
+
+    print(anagram_generator(li))

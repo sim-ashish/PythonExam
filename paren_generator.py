@@ -20,6 +20,13 @@ def parenthesis_generator(n: int, combo_result='', openBr=0, closeBr=0, result=N
     
     return result
 
+if __name__ == '__main__':
 
-generated = parenthesis_generator(3)
-print(generated)
+    number = int(input("Enter the number for which you want combination : "))
+    if (number <= 0):
+        print('[]')
+    elif (number == 1):
+        print("['()']")
+    else:
+        generated = parenthesis_generator(number)
+        print(generated)
